@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="browsermode" content="application">
+  <meta name="x5-page-mode" content="app">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta content="telephone=no" name="format-detection">
+  <title>红包特价专场</title>
+  <script src="https://img.bc.haodanku.com/cms/flexible.js"></script>
+  <!--  <link rel="stylesheet" href="./signin.css">-->
+  <style>
+      body{font-family:Microsoft YaHei,arial;background-color:#da2702;max-width:7.5rem;margin:0 auto!important;font-size:.32rem}ol,ul{list-style:none}li{list-style-type:none}em,i,th{font-style:normal}.clearfix:after{display:block;overflow:hidden;clear:both;height:0;visibility:hidden;content:""}input,select,textarea{-webkit-appearance:none;outline:0;border:none;resize:none;color:#939599}img{width:100%;display:block}#app{position:relative}*{margin:0;padding:0;-webkit-tap-highlight-color:transparent;box-sizing:border-box}.comHidden{white-space:nowrap}.comHidden,.comHidden1{overflow:hidden;text-overflow:ellipsis}.comHidden1{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}[v-cloak]{display:none}.main{width:100%;height:100%;background:#da2702 url(http://img.bc.haodanku.com/haodanku/1613973838) no-repeat 0 0;background-size:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}.banenr{width:7.12rem;height:3.14rem;margin:1.82rem auto 0}.video_preview{width:100%;height:100%;position:relative}.video_preview i{cursor:pointer;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:.64rem;height:.64rem;background-image:url(http://img.bc.haodanku.com/haodanku/1596246159);background-size:100%}.video_preview p{width:100%;height:100%;background-image:url(http://img.bc.haodanku.com/haodanku/1613975046);background-size:100%}.btn_body{height:.8rem;text-align:center;color:#fff;font-size:.28rem;line-height:.8rem}.btn_body,.btn_help{width:100%}.divcss{position:absolute;bottom:.5rem;left:50%;transform:translateX(-50%);margin-top:.25rem}.divcss,.divcss span{display:flex;align-items:center;justify-content:center}.divcss span{width:2.38rem;height:.64rem;background:linear-gradient(90deg,#ff151f,#ff7033);border-radius:.07rem;color:#fff;font-size:.26rem}.list-wrapper{width:100%;justify-content:flex-start;padding-bottom:1.3rem}.list-wrapper>h6{font-size:.36rem;font-family:PingFang SC;font-weight:700;color:#fff;text-align:center;margin-bottom:.15rem}.newtop{padding-top:.1rem;background-color:#da2702}.head-fixed{position:fixed;top:0;left:0;z-index:100;background:#fff;width:100%}.search{width:88%;background-color:#fff;border-radius:.1rem;margin:0 auto .4rem}.search,.search-box{height:.72rem;display:flex}.search-box{width:100%;border-radius:.08rem 0 0 .08rem;align-items:center}.search-box input{flex:1;height:100%;padding-right:.1rem;font-size:.24rem;color:#333}.search-icon{width:.74rem;height:100%;background:url(http://img.bc.haodanku.com/haodanku/1596015010) no-repeat;background-size:.35rem .35rem;background-position:50%}.search-btn{width:1.23rem;height:.65rem;background:linear-gradient(90deg,#fe3a3f,#faa450);border-radius:.1rem;margin-top:.035rem;margin-right:.04rem;display:flex;align-items:center;justify-content:center;font-size:.28rem;font-weight:500;color:#fff}.shoplist{width:100%;margin:0 auto;background:#ff3f17}.shoplist>li{display:flex;padding:.2rem .25rem;background:#fff;width:94%;margin:0 auto .2rem;border-radius:.08rem;position:relative}.shop-img{width:2.2rem;height:2.2rem;border-radius:.08rem}.shop-box{display:flex;flex:1;width:50%;padding:.06rem 0 0 .22rem;flex-direction:column}.shop-box.active .shop-b{margin-top:.6rem}.shop-title{color:#333;font-weight:500;font-size:.28rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.shop-money{color:#999;font-size:.22rem;font-weight:500;margin-top:.2rem;align-items:center}.shop-b,.shop-money{display:flex;justify-content:space-between}.shop-b{margin-top:.25rem}.shop-b-l,.shop-b-m{display:flex;align-items:baseline}.shop-b-m{font-size:.36rem;font-weight:700;color:#fd471f}.shop-b-m i{font-size:.26rem;font-weight:500}.shop-b-label{color:#666;font-size:.2rem;text-decoration:line-through}.shop-b-label,.shop-btn{display:flex;align-items:center;justify-content:center}.shop-btn{position:absolute;right:0;bottom:.21rem;width:1.3rem;height:.55rem;background:linear-gradient(90deg,#fe3a3f,#faa450);border-radius:.28rem 0 0 .28rem;font-weight:500;color:#fff;font-size:.24rem}.shop-coupon{bottom:.93rem;border:1px dotted #ff856c;background:#fff6f1;color:#fd471f;font-weight:800}.shop-tips{width:3.5rem;height:.38rem;background:linear-gradient(90deg,#ffeee7,#fff7f3 50%,#fff);border-radius:.19rem;display:flex;align-items:center;font-size:.2rem;color:#fc471f;font-weight:500;padding-left:.14rem;margin-top:.16rem}.shop-tips img{width:.14rem;height:.18rem;display:block;margin-right:.06rem}.tokenbox{position:fixed;top:50%;left:50%;width:5rem;height:4rem;border-radius:.2rem;margin-left:-2.5rem;margin-top:-2rem;font-size:.3rem;background-color:#fff;color:#333;overflow:hidden;padding-top:.4rem;display:none}.tokenbox>span{display:block;text-align:center;margin-bottom:.24rem}.tokenbox>p{color:#333;padding:0 .3rem;line-height:1.2rem;min-height:1.1rem;text-align:center}.tokenbox>p em{color:#ff1c43}.tokenbox>.copybtn{width:2.4rem;height:.72rem;background:linear-gradient(90deg,#ff1944,#ff4e33);border-radius:.08rem;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:500;font-size:.28rem;margin:.3rem auto 0}.tokenbox1{height:3.6rem}.back_top{width:.78rem;height:.78rem;position:fixed;right:.2rem;bottom:1.4rem;background:url(http://img.bc.haodanku.com/haodanku/1596017135) no-repeat;background-size:100% 100%}.combox{width:100%;-webkit-overflow-scrolling:touch;padding:.2rem 0}.realpic-loading{color:#ffcda0;font-size:.24rem;text-align:center}.vmIconLoad{width:.32rem;height:.32rem;font-size:20px;color:#4d74ff;display:inline-block;vertical-align:middle;background-image:url(http://img.haodanku.com/Fs3CUOAV8FeUjyhyU-3xOO5DSphI);background-repeat:no-repeat;background-size:100% 100%;-webkit-animation:vmspinLoad 2s linear infinite;animation:vmspinLoad 1.2s linear infinite}.vmIconLoad:before{-webkit-font-smoothing:antialiased;transform:translate(0)}.direct-img{position:fixed;z-index:10000;left:0;right:0;top:0;bottom:0;max-width:7.5rem;margin:auto;padding:.5rem;background:rgba(0,0,0,.3);overflow:hidden}.direct-img .direct-box{display:flex;flex-direction:column;height:100%;padding-bottom:.4rem;background:#fff;border-radius:.15rem;overflow:hidden}.direct-img .direct-box .box-header{position:relative;color:#fc6e73;font-size:.26rem;font-weight:bolder;text-align:center;line-height:.8rem;border-bottom:1px solid #f0f0f0}.direct-img .direct-box .box-header .btn-close{position:absolute;top:.27rem;right:.27rem;width:.32rem;height:.32rem;cursor:pointer}.direct-img .direct-box .box-content{flex:1;overflow:auto}.direct-img .direct-box .box-content img{margin-top:-.9rem;margin-bottom:-.4rem;display:block;width:100%;height:auto}.goback{position:fixed;top:.15rem;left:0;width:1.2rem;height:.48rem}.nav{margin:.2rem 0 .15rem}.nav-list{display:flex;padding-left:.45rem;overflow-x:auto;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.nav-list:after{content:".";display:block;height:0;clear:both;visibility:hidden}.nav-list li{font-size:.24rem;color:#f17258;background:#b92709;flex-shrink:0;padding:.08rem .2rem;margin-right:.2rem;border-radius:.06rem;cursor:pointer}.nav-list li:last-child{margin-right:.4rem}.nav-list li.nav-active{color:#fd471f;background:#fff}.sort{background-color:#ff3f17;padding-bottom:.2rem;border-radius:.2rem .2rem 0 0}.sort-list{display:flex;border-bottom:.02rem solid #eb3a15;color:#ff8f78;justify-content:space-between}.sort-list>li{width:25%;font-size:.26rem;font-weight:500;color:#ff8f78;display:inline-flex;align-items:center;justify-content:center;padding:.24rem 0}.sort-list>li.sort-active{color:#fff}.sort-list>li span{position:relative;height:.16rem;margin-left:.06rem}.sort-list>li span i{position:absolute;width:0;height:0;border-color:#b92709 transparent transparent;border-style:solid;border-width:.06rem .06rem 0}.sort-list>li span i:first-child{transform:rotate(180deg)}.sort-list>li span i:nth-child(2){bottom:0}.sort-list>li span i.arrow-active{border-color:#f2f2f2 transparent transparent}.ticket{display:inline-flex;align-items:center;border-radius:2px;font-size:0;font-family:Microsoft YaHei;margin-top:.1rem}.ticket .name{width:.38rem;font-weight:300;color:#fff;display:inline-flex;background:linear-gradient(180deg,#ff753c,#ff4b42)}.ticket .name,.ticket .value{height:.28rem;font-size:.2rem;align-items:center;justify-content:center;font-family:Microsoft YaHei}.ticket .value{display:flex;color:#fd471f;background:#fff;padding:0 .05rem;border:1px dotted #ff8209;border-left:none;font-weight:500}.free-share{position:fixed;left:0;width:100%;height:1.24rem;background:linear-gradient(180deg,hsla(0,0%,100%,0),#ff3f17 50%);bottom:0}.free-share.active{display:none}.free-share img{width:6.16rem;height:.86rem;display:block;margin:0 auto}@media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3){.main{padding-bottom:.5rem}}@media only screen and (device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:2){.main{padding-bottom:.5rem}}@media only screen and (device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:3){.main{padding-bottom:.5rem}}.shut{position:absolute;right:.2rem;top:.2rem;width:.4rem;height:.4rem;background:url(http://img.bc.haodanku.com/haodanku/1596096751) no-repeat;background-size:100% 100%}@media only screen and (max-width:750px){.nav-list::-webkit-scrollbar{display:none}}::-webkit-scrollbar{width:.06rem;height:.06rem;background-color:#fafafa}::-webkit-scrollbar-thumb{border-radius:2px;background-color:#c1c1c1}::-webkit-scrollbar-thumb:hover{background-color:#7d7d7d}@-webkit-keyframes vmspinLoad{0%{transform:rotate(0)}50%{transform:rotate(180deg)}to{transform:rotate(1turn)}}@keyframes vmspinLoad{0%{transform:rotate(0)}50%{transform:rotate(180deg)}to{transform:rotate(1turn)}}
+  </style>
+</head>
+
+<body>
+<div id="app" v-cloak>
+  <template v-if="isexplain && issource">
+    <div class="main">
+      <div class="banenr" @click="openDirect">
+        <img src="http://img-haodanku-com.cdn.fudaiapp.com/Fte7nWIHTbEXXYkNwqkqEFGDhIDq" alt="">
+      </div>
+    
+    </div>
+    <div class="list-wrapper">
+      <h6>签到红包抵扣专区</h6>
+      
+      <div class="newtop">
+        <div class="search">
+          <div class="search-box">
+            <i class="search-icon"></i>
+            <input type="text" v-model="keyword" v-on:blur="myblur" v-on:focus="myfocus"
+                   v-on:keyup.enter="handleSearch"
+                   placeholder="输入商品名称">
+          </div>
+          <span class="search-btn" v-on:click="handleSearch">搜索</span>
+        </div>
+        <div class="sort">
+          <ul class="sort-list">
+            <li v-for="item in fristOrderSort" :class="{'sort-active': item.number == sortNumber}"
+                v-on:click="handleSort(item)">
+              {{ item.name }}
+              <span>
+                    <i :class="{'arrow-active': item.min == sortId}"></i>
+                    <i :class="{'arrow-active': item.max == sortId}"></i>
+                  </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <ul class="shoplist" v-if="fristOrderItems.length>0">
+        <li v-for="(item,index) in fristOrderItems">
+          <img class="shop-img" v-lazy="item.itempic" v-if="item.itempic">
+          <img class="shop-img" src="http://img.bc.haodanku.com/haodanku-activity/1596092443" v-else>
+          <div class="shop-box" :class="!item.couponurl?'active':''">
+            <p class="shop-title">{{item.itemshorttitle}}</p>
+            <div class="shop-tips">
+              <img src="http://img.bc.haodanku.com/haodanku/1613978202">
+              <p>领取签到红包可再叠加抵扣！</p>
+            </div>
+            <div class="shop-b">
+              <div class="shop-b-l">
+                <p class="shop-b-m"><i>券后价</i>￥{{parseFloat(item.itemendprice)}}</p>
+                <p class="shop-b-label">￥{{parseFloat(item.itemprice)}}</p>
+              </div>
+            </div>
+            <div class="ticket" v-if="item.couponurl"><span class="name">券</span><span
+              class="value">￥{{item.couponmoney}}</span></div>
+            <span class="shop-btn shop-coupon" v-on:click="getTaocode(item,true)" v-if="item.couponurl">立即领券</span>
+            <span class="shop-btn" v-on:click="getTaocode(item)">立即抢购</span>
+          </div>
+        </li>
+      </ul>
+      <div class="combox">
+        <p class="realpic-loading" v-if="loadshow"><i class="vmIconLoad"></i><em>数据加载中...</em></p>
+        <p class="realpic-loading" v-else>数据已加载完了</p>
+      </div>
+    </div>
+    <div class="free-share" :class="acFocus?'active':''">
+      <img src="http://img.bc.haodanku.com/haodanku/1613981706" v-on:click="copyShare()" class="share-btn">
+    </div>
+    <div>
+      <div class="back_top" v-if="scrollShow" v-on:click="arrowTop()"></div>
+      <div class="tokenbox tokenbox1">
+        <em class="shut" v-on:click="shutBtn"></em>
+        <span>{{taoToken}}</span>
+        <p>复制淘口令，打开手机淘宝领取</p>
+        <span class="copybtn" v-on:click="copyBtn('.copybtn')">复制淘口令</span>
+      </div>
+    </div>
+  </template>
+  
+  <div v-if="!isexplain">
+    <img src="http://img.bc.haodanku.com/haodanku-activity/1596022875" class="goback"
+         v-on:click="arrowBtn('isexplain')">
+    <img src="http://img.bc.haodanku.com/haodanku_activity/1596768292">
+  </div>
+  
+  <div v-if="!issource">
+    <img src="http://img.bc.haodanku.com/haodanku-activity/1596022875" class="goback"
+         v-on:click="arrowBtn('issource')">
+    <img src="http://img.bc.haodanku.com/haodanku-activity/1596032111" alt="">
+  </div>
+  
+  <div class="direct-img" v-show="showDirect" @click="closeDirect">
+    <div class="direct-box">
+      <div class="box-header">
+        使用教程
+        <img
+          @click="closeDirect"
+          class="btn-close"
+          src="http://img-haodanku-com.cdn.fudaiapp.com/FsHmpTJUJxhdJ7X8YL36ix1GduZg"
+          alt="">
+      </div>
+      <div class="box-content">
+        <img src="http://img-haodanku-com.cdn.fudaiapp.com/Fr9V2q7ZECUXZ5MZMeu9k_Wvu68b" alt="">
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/vue/2.6.10/vue.min.js"></script>
+<script src="https://cdn.staticfile.org/vue-lazyload/1.3.3/vue-lazyload.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/layer/2.3/layer.js"></script>
+<script src="https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/ScrollToFixed/1.0.8/jquery-scrolltofixed-min.js"></script>
+<script>
+var vmUrlSearchs = null;
+
+function vmRequest(name) {
+  if(!vmUrlSearchs) {
+    vmUrlSearchs = new vmUrlSearch();
+  }
+  return vmUrlSearchs[name];
+}
+
+function vmUrlSearch() {
+  var name, value;
+  var str = location.href;
+  var num = str.indexOf("?");
+  str = str.substr(num + 1);
+  var arr = str.split("&");
+  for(var i = 0; i < arr.length; i++) {
+    if(num = arr[i].indexOf("=") != -1) {
+      num = arr[i].indexOf("=");
+    } else {
+      num = arr[i].indexOf("/");
+    }
+    if(num > 0) {
+      name = arr[i].substring(0, num);
+      value = arr[i].substr(num + 1);
+      this[name] = value;
+    }
+  }
+}
+
+Vue.use(VueLazyload, {
+  preLoad: 1.3,
+  error: "http://img.bc.haodanku.com/haodanku/1595237918",
+  loading: "http://img.bc.haodanku.com/haodanku-activity/1596092443",
+  attempt: 1
+});
+var app = new Vue({
+  el: "#app",
+  data: {
+    showDirect: false,
+    codeId: vmRequest("code"),
+
+    fristOrderSort: [
+      {
+        name: "价格",
+        bool: true,
+        max: 3,
+        min: 4,
+        number: 0
+      },
+      {
+        name: "销量",
+        bool: false,
+        max: 1,
+        min: 2,
+        number: 1
+      },
+      {
+        name: "最新",
+        bool: false,
+        max: 7,
+        min: 8,
+        number: 2
+      }
+    ],
+    sortId: 3,
+    sortBool: true,
+    sortNumber: 0,
+
+    fristOrderItems: [],
+    topArr: [],
+
+
+    page: 1,
+    loadmsg: true,
+    loadshow: true,
+
+    scrollShow: false,
+
+    taoToken: "",
+
+    isexplain: true,
+    issource: true,
+    locationUrl: window.location.href,
+
+    keyword: "",
+
+    sigclick: false,
+
+    playState: false,
+    vmHttp: window.location.protocol.substring(0, window.location.protocol.length - 1) != "file" ? window.location.protocol.substring(0, window.location.protocol.length - 1) : "https",
+
+    acFocus: false,
+    outerHeight: ""
+  },
+  created: function() {
+    this.ajaxFristOrderItems(true);
+  },
+  mounted: function() {
+    this.outerHeight = $(".banenr").outerHeight(true) + $(".secret-wrapper").outerHeight(true) + $(".list-wrapper>h6").outerHeight(true) + 2;
+    this.taobaoscroll();
+  },
+  methods: {
+    arrowBtn: function(val) {
+      this[val] = !this[val];
+      this.arrowTop();
+    },
+    taobaoscroll: function() {  //滚动加载
+      var that = this;
+      window.addEventListener("scroll", function() {
+
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+        var scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+
+        if(!that.isexplain || !that.issource) return;
+        that.scrollShow = scrollTop > 750;
+        if(scrollHeight > clientHeight && scrollTop + clientHeight + 20 >= scrollHeight) {
+          if(that.loadmsg && !that.sigclick) {
+            that.loadmsg = false;
+            that.sigclick = false;
+            that.ajaxFristOrderItems();
+          }
+        }
+      });
+    },
+    ajaxFristOrderItems: function(cb) {
+      var that = this;
+      if(that.sigclick) {
+        if(this.fristOrderItems[0]) {
+          this.fristOrderItems.forEach(function(item) {
+            item.itempic = "";
+          });
+        }
+        document.documentElement.scrollTop = that.outerHeight;
+        document.body.scrollTop = that.outerHeight;
+      }
+      $.ajax({
+        type: "Get",
+        url: that.vmHttp + "://api.haodanku.com/activity/ActivitySignInItems",
+        data: {
+          cat_id: that.selectCat,
+          order: that.sortId,
+          p: that.page,
+          keyword: that.keyword
+        },
+        dataType: "json",
+        timeout: 5000,
+        success: function(data) {
+          if(data.code == "200") {
+            if(that.sigclick) {
+              that.fristOrderItems = data.data;
+            } else {
+              that.fristOrderItems = that.fristOrderItems.concat(data.data);
+            }
+            that.topArr = data.top_data;
+            if(that.page < data.count_page) {
+              that.loadmsg = true;
+              that.loadshow = true;
+              that.page += 1;
+            } else {
+              that.loadmsg = false;
+              that.loadshow = false;
+            }
+            that.$nextTick(function() {
+              that.sigclick = false;
+              if(cb) {
+                $(".newtop").scrollToFixed();
+              }
+
+            });
+          } else {
+            that.loadmsg = false;
+            that.loadshow = false;
+            that.sigclick = false;
+            layer.msg(data.msg, {
+              time: 2000,
+              shade: 0.1,
+              shadeClose: true
+            });
+          }
+
+        },
+        error: function() {
+          that.msgFun("网络错误，请检查网络重试");
+        }
+      });
+    },
+    handleCat: function(item) {
+      this.selectCat = item.cat_id;
+      this.page = 1;
+      this.loadmsg = true;
+      this.loadshow = true;
+      this.sigclick = true;
+      this.ajaxFristOrderItems();
+    },
+    handleSort: function(item) {
+      if(this.sortNumber == item.number) {
+        if(item.bool) {
+          this.sortId = item.min;
+          this.fristOrderSort[item.number].bool = false;
+        } else {
+          this.sortId = item.max;
+          this.fristOrderSort[item.number].bool = true;
+        }
+      } else {
+        this.fristOrderSort[item.number].bool = true;
+        this.sortNumber = item.number;
+        this.sortId = item.max;
+      }
+      this.page = 1;
+      this.loadmsg = true;
+      this.loadshow = true;
+      this.sigclick = true;
+      this.ajaxFristOrderItems();
+    },
+    popupFun: function(classname) {
+      layer.open({
+        type: 1,
+        shift: 0,
+        title: false,
+        closeBtn: 0,
+        shade: 0.4,
+        shadeClose: true,
+        content: $(classname)
+      });
+    },
+    getTaocode: function(item, cb) {
+      var that = this;
+      var load = layer.load(1, {shade: 0.3});
+      $.ajax({
+        type: "Post",
+        url: that.vmHttp + "://api.haodanku.com/api/signin_ratesurl",
+        data: {
+          apikey: '6318F9F7E76A', //必填
+          pid: 'mm_11529310_2189950137_111075150402', //必填
+          tb_name: 'nutter312', //必填
+          itemid: item.itemid,
+          activityid: cb ? item.activityid : undefined,
+          title: item.itemshorttitle,
+          domain: that.vmHttp + "://" + window.location.host
+        },
+        dataType: "json",
+        timeout: 5000,
+        success: function(data) {
+          layer.close(load);
+          if(data.code == "200") {
+            that.taoToken = data.data;
+            that.popupFun(".tokenbox1");
+          } else {
+            that.msgFun(data.msg);
+          }
+
+        },
+        error: function() {
+          layer.close(load);
+          that.msgFun("网络错误，请检查网络重试");
+        }
+      });
+    },
+    msgFun: function(val) {
+      layer.msg(val, {
+        time: 2000,
+        shade: 0.1,
+        shadeClose: true
+      });
+    },
+    arrowTop: function() {
+      $("body,html").stop(true, true).animate({
+        scrollTop: 0
+      });
+    },
+    copyBtn: function(dom) { //复制公共方法
+      var that = this;
+      var clipboard = new ClipboardJS(dom, {
+        text: function(target) {
+          return that.taoToken;
+        }
+      });
+      clipboard.on("success", function(e) {
+        layer.closeAll();
+        that.msgFun("复制口令成功,请打开淘宝领取");
+        e.clearSelection();
+        clipboard.destroy();
+      });
+      clipboard.on("error", function(e) {
+        layer.msg("复制口令失败,请手动复制", {
+          shade: 0.4,
+          time: 1000,
+          shadeClose: false
+        }, function() {
+        });
+
+      });
+    },
+    copyShare: function() { //复制公共方法
+      var that = this;
+
+      var txt = that.locationUrl;
+
+      var clipboard = new ClipboardJS(".share-btn", {
+        text: function(target) {
+          return txt;
+        }
+      });
+      clipboard.on("success", function(e) {
+        that.msgFun("已复制分享链接");
+        console.log(txt);
+        e.clearSelection();
+        clipboard.destroy();
+      });
+      clipboard.on("error", function(e) {
+        layer.msg("复制分享链接失败！", {
+          shade: 0.4,
+          time: 1000,
+          shadeClose: false
+        }, function() {
+        });
+
+      });
+    },
+    handleSearch: function() {
+      this.selectCat = 0;
+      this.page = 1;
+      this.loadmsg = true;
+      this.loadshow = true;
+      this.sigclick = true;
+      this.ajaxFristOrderItems();
+    },
+    shutBtn: function() {
+      layer.closeAll();
+    },
+    playBtn: function() {
+      this.playState = true;
+    },
+    myfocus: function() {
+      this.acFocus = true;
+    },
+    myblur: function() {
+      this.acFocus = false;
+    },
+    openDirect: function() {
+      this.showDirect = true;
+    },
+    closeDirect: function() {
+      this.showDirect = false;
+    }
+  },
+  watch: {}
+});
+</script>
+</body>
+
+</html>
